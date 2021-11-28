@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home Page</title>
+</head>
+
+<body style="background-color: black;" id="body">
+</body>
+<script type="text/javascript">
+    //add your own gifs by adding the link to the array
+    var gifs = ["https://media3.giphy.com/media/lRdIZFinJQFkQ/giphy.gif?cid=ecf05e47boye5056am9s616py1c9oy26tgqffe50bvftb0f1&rid=giphy.gif&ct=g",
+        "https://media3.giphy.com/media/l0Iy2AFCoRuXIiwE0/giphy.gif?cid=ecf05e4780kw5z35djs5kn3jm3ihroe51bwotq02ddmnjk2z&rid=giphy.gif&ct=g"];
+
+    randNum = Math.floor(Math.random() * (gifs.length));
+    const body = document.getElementById('body');
+    //change width and height based on personal preferences
+    body.innerHTML = `<img src="${gifs[randNum]}" width=2040px height=990px>`
+</script>
+
+</html>
